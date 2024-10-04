@@ -1,0 +1,109 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #fff895;
+    color: black;
+}
+
+h1 {
+    color: #826767;
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    border: 5px solid black;
+    box-sizing: border-box;
+    background-color: white
+}
+
+.homeh3 {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 25px;
+}
+
+nav a {
+    background-color: #ffe25e;
+    padding: 1rem 2rem;
+    margin: 1em;
+    border: 2px solid black;
+    align-items: center;
+}
+    
+p {
+    margin: 0em;
+    padding: 1em;
+    background-color: #ffe25e
+}
+
+div {
+    text-align: center;
+}
+
+.thumbnail {
+    width: 400px;
+    height: 250px;
+}
+
+.section {
+    display: flex;
+    align-items: flex-start; /* zorgt ervoor dat de tekst naast de afbeelding komt */
+    margin-bottom: 30px; /* dit is de ruimte tussen secties */
+}
+
+.section p {
+    max-width: 800px; /* Houdt de tekst op een breedte voor leesbaarheid */
+}
+
+.fotovanons {
+    width: 140px;
+    height: 245px;
+    margin-right: 20px; /* dit is de ruimte tussen afbeelding en tekst */
+}
+
+/* alle opmaak voor de linkjes*/
+a {
+    transition: all 0.8s;
+    display: inline-block;
+}
+
+a:visited {
+    color: cornflowerblue
+}
+
+a:hover{
+    transform: scale(1.2) rotate(10deg);
+    color: magenta;
+}
+
+/*animatie van het logo*/
+.podcastlogo {
+    width: 150px; /*formaat van het logo*/
+    animation: rotateZoom 15s infinite; /* beginnen met draaien en zoom animatie */
+}
+
+@keyframes rotateZoom {
+    0% {
+        transform: rotate(0deg) /* Beginpositie */
+    }
+    50% {
+        transform: rotate(360deg)  /* Draai 360 graden*/
+    }
+    100% {
+        transform: rotate(0deg) /* Terug naar beginpositie */
+    }
+}
